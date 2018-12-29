@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<script type="text/javascript" src="aimcalc.js"></script>
+	 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="calc.css">
+</head>
+<body>
+
+	
+
+	<h1> Calculator</h1>
+
+	<form name="calculator" id="CALC">
+
+	<input type="alphanumeric" id="inp" name="Result">
+	
+	<br><br>
+
+	<button type="button" class="btn" value="7" onclick="document.calculator.Result.value+='7'">7</button>
+	<button type="button" class="btn" value="8" onclick="document.calculator.Result.value+='8'">8</button>
+	<button type="button" class="btn" value="9" onclick="document.calculator.Result.value+='9'">9</button>
+	
+	<br><br>
+	
+	<button class="btn" type="button" value="4" onclick="document.calculator.Result.value+='4'" >4</button>
+	<button class="btn" type="button" value="5" onclick="document.calculator.Result.value+='5'" >5</button>
+	<button class="btn" type="button" value="6" onclick="document.calculator.Result.value+='6'" >6</button>
+	
+	<br><br>
+
+	<button class="btn" type="button" value="1" onclick="document.calculator.Result.value+='1'" >1</button>
+	<button class="btn" type="button" value="2" onclick="document.calculator.Result.value+='2'" >2</button>
+	<button class="btn" type="button" value="3" onclick="document.calculator.Result.value+='3'" >3</button>
+
+	<br><br>
+
+	<input class="btn" type="button" value=" + " onClick="document.calculator.Result.value+='+'">
+	<input class="btn" type="button" value=" - " onClick="document.calculator.Result.value+='-'">
+	<input class="btn" type="button" value=" * " onClick="document.calculator.Result.value+='*'">
+	
+
+	<br><br>
+
+	<input class="btn" type="button" value=" / " onClick="document.calculator.Result.value+='/'">
+	<input type="button" class="btn" value=" Ans " onClick="document.calculator.Result.value=eval(document.calculator.Result.value)">
+	<input type="button" class="btn" value="OFF" onClick="off()">
+	
+	<br><br><br><br>
+
+
+	</form>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+</html>
